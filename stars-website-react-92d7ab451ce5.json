@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "stars-website-react",
+  "private_key_id": "92d7ab451ce5bf387700a6b65e3ddd944e005c4c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwoeAUj9yYnOU3\nsu7mTzZ/7J+gJhCxdLvcAZlBcIi3l8cLFAPW06Ob9EiN9TtkA/EHWnIV+co8Dws0\nMVJEol5dn/PsYJcrxaFL+G4s3sECnc6WHOuSPT1p3KW2B6EiqIgbPCoN5WpAmKeq\nR7qoU0zt/9twcmTPdL2UvUInHzd68ffgyPZwW+h7dCa/CWyL5P+bdItsKPqrm1wR\neZvJ2E7QcIIuILwrsBwEZAoIcGW0xRklxWU2tE/FWhGTda4F2dvZngcIaZj9NNgF\nbUKD1CXHFSlSu6bSnSGI/iULl7p3FVS/79VdxbsPI2h0Q5LH0m6c9xiiREJR8LKJ\nKyCID0K9AgMBAAECggEAUHmAIX4mEHYzTPw+MjpW51PEqm+NXXyE9sjXrWP7NkJ1\nkkuNMDx+p1hWEi9v3rKZBzOjFPYYuOJVxXLPO6wKeHee58xeM7g4M+e9Mr5Oi8Wg\nUO5eOeOi7m90JIo3VRYZ5Oa1dl1W2pVylndVyMkjHLBcp0/HNGnI0lKkKDTlzyJa\n+Wg/45uD8QnBekceG2J8LK3J0p/qBzxcxqF+fPOXgYMgrv3+1ODR83ZQRcYhdkHh\nFwPVqQDSfawrmJJgWXKeu+BoLsB6yhnpNG0J1/g1Ib89yA+JmIwl8/uizDuVZ9sM\n7I47EZvwTOuj1OXdOJikHhb09tlEi5BrlLOlwQhItQKBgQDko6y/eZi7YLdgM++i\nWgqsCBcG04hYjAC0kDHfgx6Pb8Msh3D1EVK/hkuKYMCCVpfchB3WuxDIQmXQ2/Hj\nolygGguZDQAD5AzjH0WWxmc6QXephheZmKDw+yFgYzHOlMDqjQq64TsPfgrAjLOn\nmVUMrGQ8Pjt3CYamzY6Cv8mQrwKBgQDFxPl/XpO3aNQgLiy1Ydn8v8S5Fsg4gO25\nX1xR2RXXcWPmVrKKOzaXwnfW9aTEIX1Yih7chYLvzjUv6i02+aOxcV7mzxKQYui0\n007bzbtpJKTvxLUduuIc616x4fd/BV3DEV7nVmxax1eY1ggetIXC734lhFRIEJ4L\nLK3JEJLGUwKBgGC2w3nzK6IHVUpCbdlVETKX8XWXwRMDlcDLRe1v/1tZQUvytttT\nSpdtbULJjmUT0AUddanBU2YCgCMLBpTttxSaL9G76Ae9TZ49Oih/IGdKDh4NdKoq\nH9oPwJyPGSBzV+9fXeyTHXJ+NHoiilQYzhsgSP4arPi7dNPWG7Q/ADpNAoGAFb+W\njFozNl0xzqQlSIENPs077frCY+xRuCvzdBDCZSHUEZWBJtBiLYg2M45p4yOnrB/s\nSuXnw0VS9gTzmfMT/ERyYkFtUjF+U7xVFLjoHiToenGQVUei6/k6PaeS1wYZDIWR\ngTEw0z7OtED9PZsuhoRdw/RsbExfhO0R42WOLn8CgYEA40Z8/TebZztakEVpecVy\n2Oka+k6+o3NcufFZ5vN1XnUEjFVjJsAPacqsTl0jviJZXFkQ1kzwso03WPAsPL3Z\nF7VdOdNEKHpIqA2473E28m3FRvMeiX9gt5PJkNH8G/h+uSaTxIecUh6oKnH83B7w\nryK4Ocu81OMa0XtJEoVyFsg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "stars-website@stars-website-react.iam.gserviceaccount.com",
+  "client_id": "116519685110310482090",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/stars-website%40stars-website-react.iam.gserviceaccount.com"
+}

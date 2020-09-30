@@ -1,0 +1,417 @@
+Delivered-To: robyop.eyeco@gmail.com
+Received: by 2002:adf:ea8c:0:0:0:0:0 with SMTP id s12csp4673836wrm;
+        Tue, 29 Sep 2020 09:37:44 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxa5M/YXosSiKaCiTR4VtXx27flLh3HQGxp/Gg9CVdkRM/mMVJ6y2HOYtxGgrFYS7kMudpq
+X-Received: by 2002:a25:cd82:: with SMTP id d124mr7393486ybf.461.1601397464780;
+        Tue, 29 Sep 2020 09:37:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601397464; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WIhL5hZWGjejrcSEw3gvbh45CgBMOFXK5vNtfcFA2op2F0uGyZ6pRs9STEJdi1srQC
+         Wd191OFJGBj5Oc2gzEOSGkYnM68Ef8tSAgI7dk0kpPFDOwDxcM0ZODUTleKqMTO6lDBH
+         pFNQ9gfdvDczGeSsKYPoCGQPoMht2Khv+3uG43oTBbJg/UxRBemQYiOUSUS1RLkn4cxo
+         3k2NlhLBP5fIsa6iLTkoSdb8CUrBb+TQvcIkcfVZdTl/22N98IUVn38XpLjOEVt3TE6J
+         x5WM75PrDemQ5toEQAIoFYEHGhkEDItaehgbsfAgfkk/rGjoQH5HrLOMeLaB6Cm5EEIt
+         /Ckw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:mime-version:feedback-id:errors-to:reply-to:from:subject
+         :to:date:dkim-signature;
+        bh=WTuT8iRyfgG44PJ9IdfdLG3BqYdNAoOKnpBVC+ShyGw=;
+        b=fiVuSq1+Q3m6TuQImp0TwF703bDRyPZildFr8iXMRzRlGlDcSpI6Gfw+20pBp63Se9
+         q2OfKELbiCqrfe+BdASLdYuhtygr06iY/Dka6zBNubIPjbvSK64INt9ldtMV1570rzrH
+         YeTBapTsJE4laPequy2HSjIsV0P2VJ0SFWXAmOonST3uTHLvbhNHC4d1Gr2rnGGifrz0
+         iNZMC05s3FHJR7LR0Zte7QvJQHh6AKOijoPNFdYMln8yHMTPwUJEMVt2obugui9Zj6QP
+         0DEfHG0znndNH1VhtGFks8txswlu9EPUyPkootM9fY38XGZwzerToYkJ0ZawNu+X9uD2
+         Sfeg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=SUXnOKWh;
+       spf=pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) smtp.mailfrom=notification@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+Return-Path: <notification@facebookmail.com>
+Received: from 66-220-155-151.mail-mail.facebook.com (66-220-155-151.mail-mail.facebook.com. [66.220.155.151])
+        by mx.google.com with ESMTPS id w138si5072352ybe.340.2020.09.29.09.37.44
+        for <robyop.eyeco@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 29 Sep 2020 09:37:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) client-ip=66.220.155.151;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=SUXnOKWh;
+       spf=pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) smtp.mailfrom=notification@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1601397455;
+	bh=eeiM7phN7bPMEsJFl2qX/4JyokRthNQpDcN10Z/2jC0=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=SUXnOKWhsCOkaE1nGvBimCRnN8yrZG3r/0+dmlOoaL1fIHC8bO/3KpUYPY4j8199I
+	 u3VTPDoQF5OH4HFnbogDu3LTrcmgToXgM+s3dDOFHHKkKuOFLh7xGTFH7imfxWYmsM
+	 BiigfzuistCQoOneGrPbI/BKRpRIPej4K8ErapJE=
+X-Facebook: from 2401:db00:2120:827c:face:0:87:0 ([MTI3LjAuMC4x]) 
+	by business.facebook.com with HTTPS (ZuckMail);
+Date: Tue, 29 Sep 2020 09:37:35 -0700
+To: robyop.eyeco@gmail.com
+Subject: Deb Richter Sent You Instructions on Setting up Facebook Pixel
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: notification@facebookmail.com
+From: "Deb Richter, via Facebook" <notification@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: notification@facebookmail.com
+X-Facebook-Notify: ads_pixel_code; mailid=HMTYwMTM5NjIyMDc1NTA1NTpyb2J5b3AuZXllY29AZ21haWwuY29tOjYzMA
+Feedback-ID: 9999:ads_pixel_code:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_a98d562d876d19485e1cf522ce46a76c"
+Message-ID: <144c5336027211eba53198039bc724d4-51271940@2becac2586e4a2316c52889493fe723a75328a7abec020fbc9621c3b74f9485b>
+
+
+--b1_a98d562d876d19485e1cf522ce46a76c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Deb Richter needs your help installing the Facebook pixel on their =
+website. This code lets you track conversions and show ads to people based =
+on their activity on your website.
+
+Instructions
+ Copy the code below and paste it between the <head> and </head> in your =
+website code. Then you can set up rules to track specific actions people =
+take across your website. To confirm installation, please use the Pixel =
+Helper. Learn more in the  Help Center .=20
+
+<!-- Facebook Pixel Code -->
+<script nonce=3D"Lhj4mash">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=3Df.fbq=3Dfunction(){n.callMeth=
+od?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=
+=3Dn;
+n.push=3Dn;n.loaded=3D!0;n.version=3D'2.0';n.queue=3D[];t=3Db.createElemen=
+t(e);t.async=3D!0;
+t.src=3Dv;s=3Db.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}=
+(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '339821513993100');
+fbq('track', "PageView");</script>
+<noscript><img height=3D"1" width=3D"1" style=3D"display:none"
+src=3D"https://www.facebook.com/tr?id=3D339821513993100&ev=3DPageView&nosc=
+ript=3D1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+This message was sent to robyop.eyeco@gmail.com at your request.
+Facebook, Inc., Attention: Community Support, 1 Facebook Way, Menlo Park, =
+CA 94025
+
+
+--b1_a98d562d876d19485e1cf522ce46a76c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style =
+nonce=3D"Lhj4mash">body{background:#dadde1;font-family:Helvetica, Arial, =
+sans-serif;font-weight:300}a{color:#1d2129;text-decoration:none;white-spac=
+e:nowrap !important}#email_table{width:100% =
+!important}#email_content{padding:0 !important}#profile_pic =
+img{border:0}*[class].usercard{background:#fff}@media all and =
+(max-device-width: 720px){a{white-space:pre-wrap =
+!important}table[bgcolor=3D"#e9eaed"]{background:transparent =
+!important}*[id]#body_container{border-bottom:1px solid #e5e5e5 =
+!important}table[width=3D"610"],*[id]#body_container,*[id]#cta_container{t=
+able-layout:fixed}*[id]#cta_outer{border:none !important}*[id]#header_prof=
+ile>table>tbody>tr>td:not(:nth-child(4)){display:none =
+!important}*[id]#profile_name{display:none}*[id]#profile_pic{-moz-border-r=
+adius:3px !important;-webkit-border-radius:3px =
+!important;border-radius:3px !important;border-width:0 =
+!important;overflow:hidden}*[id]#header_title{width:auto =
+!important}*[id]#header_profile{width:24px}*[class].bio{display:none =
+!important}*[id]#main_content{width:100%}*[class].content>div =
+a{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap =
+!important;width:160px}*[class].ext{padding-right:20px}*[class].image =
+a{display:block;margin-left:20px}*[class].cta_btn,*[class].scnd_btn{displa=
+y:block}*[id]#email_cta>tbody>tr>td[width=3D"100%"]{display:none}}@media =
+all and (device-width: 720px){table[width=3D"610"],*[id]#body_container,*[=
+id]#footer_container{width:340px}*[id]#email_filler td{height:12px =
+!important}*[class].usercard{width:300px !important}}@media all and =
+(max-device-width: =
+480px){*[id]#cta_container>table>tbody>tr>td[height=3D"15"]{display:none =
+!important}}@media all and (device-width: 320px){table[width=3D"610"],*[id=
+]#body_container,*[id]#cta_container{min-width:400px;width:auto}center{pad=
+ding:0 10px}*[class].content>div a{width:182px}}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr"><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" id=3D"email_table" =
+style=3D"border-collapse:collapse;width:98%;"><tr><td id=3D"email_content" =
+style=3D"font-family:&#039;lucida grande&#039;,tahoma,verdana,arial,sans-s=
+erif;font-size:12px;padding:0px;background:#e0e1e5;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;width:100%;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:0;border-left:none;border-right:none;border-top:none;border=
+-bottom:none;"><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"padding:0;width:100%;"><span style=3D"color:#FFFFFF;display:none =
+!important;font-size:1px;">&#064;media all and (max-width: 480px) &#123; =
+a.button &#123; display: block !important; margin-right: 32px !important; =
+margin-left: 32px !important; &#125;&#125; Deb Richter sent you =
+instructions for installing the Facebook pixel on a website. Your =
+organization is using the Facebook pixel to track website activity and run =
+ads based on that activity. You must install two kinds of code snippets on =
+the website. This includes pixel base code on every page of your website =
+and event code on specific webpages. 1 Facebook Pixel ID Your pixel ID is =
+the unique number assigned to your Facebook pixel. You can use this number =
+in your pixel base code. Pixel ID: 339821513993100 2 Install Pixel Base =
+Code The pixel base code tracks activity on your website, providing a =
+baseline for measuring specific events. Copy the base code below and paste =
+it between the header tags on every page of your website: &lt;!-- Facebook =
+Pixel Code --&gt; &lt;script&gt; !function(f,b,e,v,n,t,s) =
+&#123;if(f.fbq)return;n=3Df.fbq=3Dfunction()&#123;n.callMethod? =
+n.callMethod.apply(n,arguments):n.queue.push(arguments)&#125;; =
+if(!f._fbq)f._fbq=3Dn;n.push=3Dn;n.loaded=3D!0;n.version=3D&#039;2.0&#039;=
+; n.queue=3D[];t=3Db.createElement(e);t.async=3D!0; =
+t.src=3Dv;s=3Db.getElementsByTagName(e)[0]; =
+s.parentNode.insertBefore(t,s)&#125;(window,document,&#039;script&#039;, =
+&#039;https://connect.facebook.net/en_US/fbevents.js&#039;); =
+fbq(&#039;init&#039;, &#039;339821513993100&#039;); fbq(&#039;track&#039;, =
+&#039;PageView&#039;); &lt;/script&gt; &lt;noscript&gt; &lt;img =
+height=3D&quot;1&quot; width=3D&quot;1&quot; src=3D&quot;https://www.faceb=
+ook.com/tr?id=3D339821513993100&amp;ev=3DPageView =
+&amp;noscript=3D1&quot;/&gt; &lt;/noscript&gt; &lt;!-- End Facebook Pixel =
+Code --&gt; You can also turn on data matching so that information from =
+your pixel will be used to match website actions with Facebook people. =
+This helps increase the effectiveness of conversion reporting, ad =
+optimization and targeting. Learn More . 3 Install Event Code Event code =
+lets your organization track specific actions that happen and leverage =
+them in advertising. You must install event code on specific pages of your =
+website where the actions will happen. You can use the 9 that Facebook =
+pre-defines to track and optimize ads for conversions. To measure and =
+optimize for more granular actions, you can add parameters to your events =
+by using recommended or advanced installation options for your event tags. =
+You can also create custom events for actions important to your business =
+that you define. There are three implementation settings: basic, =
+recommended, and advanced. Get Event Code for Conversions 4 Check Pixel =
+Status Go to Facebook Ads Manager and select Pixels from the top menu. If =
+the status is Active , your pixel has been installed correctly. It may =
+take up to 20 minutes for your pixel status to change after installing it. =
+To troubleshoot or check your setup use the Test Events tool in Events =
+Manager. You can also download the Pixel Helper Chrome browser extension =
+for basic troubleshooting. If the status is still No Activity Yet after 20 =
+minutes, your pixel code may not be installed correctly. View the pixel =
+set up guide .</span></td></tr><tr><td =
+style=3D"padding:0;width:100%;"><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#435E9C" =
+style=3D"border-collapse:collapse;width:100%;background:#435E9C;background=
+-image:-webkit-linear-gradient(top, #5c77b5, =
+#435e9c);border-color:#0A1F4F;border-style:solid;border-width:0px 0px 1px =
+0px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.25);height:47px;" =
+id=3D"header"><tr><td style=3D""><center><table border=3D"0" width=3D"610" =
+cellspacing=3D"0" cellpadding=3D"0" height=3D"44" =
+style=3D"border-collapse:collapse;"><tr><td align=3D"left" =
+id=3D"header_title" style=3D"width:100%;line-height:47px;"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><td width=3D"19" style=3D""><a =
+href=3D"https://www.facebook.com/n/?aref=3D1601397455322945&amp;medium=3De=
+mail&amp;mid=3DHMTYwMTM5NjIyMDc1NTA1NTpyb2J5b3AuZXllY29AZ21haWwuY29tOjYzMA=
+&amp;n_m=3Drobyop.eyeco%40gmail.com" =
+style=3D"color:#3b5998;text-decoration:none;"><img =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/PBLErQQDUZm.png" =
+style=3D"border:0;display:block;margin:13px 0 14px 0;" /></a></td><td =
+width=3D"10" style=3D"width:10px;"></td><td style=3D""><font =
+color=3D"white" size=3D"3"><a =
+style=3D"color:#ffffff;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;font-weight:bold;text-shadow:0 -1px rgba(34, 59, 115, =
+0.85);vertical-align:middle;" href=3D"https://www.facebook.com/n/?aref=3D1=
+601397455322945&amp;medium=3Demail&amp;mid=3DHMTYwMTM5NjIyMDc1NTA1NTpyb2J5=
+b3AuZXllY29AZ21haWwuY29tOjYzMA&amp;n_m=3Drobyop.eyeco%40gmail.com"></a></f=
+ont></td></table></td></tr></table></center></td></tr></table></td></tr><t=
+r><td style=3D"padding:0;width:100%;"><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#e0e1e5" id=3D"table_color" =
+style=3D"border-collapse:collapse;"><td style=3D""><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" id=3D"email_filler" =
+style=3D"border-collapse:collapse;"><td height=3D"19" =
+style=3D"">&nbsp;</td></table><center><table border=3D"0" width=3D"610" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td align=3D"left" =
+id=3D"body_container" style=3D"background-color:#ffffff;border-color:#c1c2=
+c4;border-style:solid;display:block;border-width:1px;border-radius:5px;-we=
+bkit-border-radius:5px;-moz-border-radius:5px;box-shadow:0 1px 1px rgba(0, =
+0, 0, 0.10);overflow:hidden;"><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><td style=3D""><div =
+style=3D"max-width:630px;margin:16px;color:#4b4f56;font-size:12px;line-hei=
+ght:18px;font-family:helvetica, arial, sans-serif;"><style =
+nonce=3D"Lhj4mash"> @media all and (max-width: 480px) { a.button { =
+display: block !important; margin-right: 32px !important; margin-left: =
+32px !important; }}</style><table><tr =
+style=3D"color:#4b4f56;font-size:12px;line-height:18px;"><td =
+style=3D"vertical-align: middle;" class=3D"middle"><div =
+style=3D"border-radius:100%;display:inline-block;overflow:hidden;margin-ri=
+ght: 16px;width: 96px;height: 96px;"><img =
+class=3D"-cx-PRIVATE-uiSquareImage__root _s0 =
+-cx-PRIVATE-fbProfilePhoto__root _4ooo =
+-cx-PUBLIC-fbProfilePhoto__squareshape _1x2_ =
+-cx-PRIVATE-fbProfilePhoto__squareshape _1ve7 img" src=3D"https://scontent=
+-iad3-1.xx.fbcdn.net/v/t1.30497-1/c29.0.100.100a/p100x100/84628273_1761598=
+30277856_972693363922829312_n.jpg?_nc_cat=3D1&amp;_nc_sid=3Ddbb9e7&amp;_nc=
+_ohc=3DEj-s2wsYTIgAX-n9PUu&amp;_nc_ad=3Dz-m&amp;_nc_cid=3D0&amp;_nc_ht=3Ds=
+content-iad3-1.xx&amp;_nc_tp=3D27&amp;oh=3D5ab11f15211e9604316141bef16c254=
+f&amp;oe=3D5F999DF5" alt=3D"" aria-label=3D"Deb Richter" role=3D"img" =
+style=3D"width:96px;height:96px" /></div></td><td style=3D"vertical-align: =
+top;"><p><a title=3D"Deb Richter" href=3D"https://business.facebook.com/pr=
+ofile.php?id=3D100046950815484&amp;eid=3DARAdWk1KHStp7b8_rqGso7qwxdJNnFwtF=
+rSSQWCRlMTDTbz1aa2SwuOacZzMaov-A3wqMVxJMXugMHA-" data-hovercard=3D"/ajax/h=
+overcard/user.php?id=3D100046950815484&amp;extragetparams=3D%7B%22eid%22%3=
+A%22ARAdWk1KHStp7b8_rqGso7qwxdJNnFwtFrSSQWCRlMTDTbz1aa2SwuOacZzMaov-A3wqMV=
+xJMXugMHA-%22%7D" data-hovercard-prefer-more-content-show=3D"1">Deb =
+Richter</a> sent you instructions for installing the Facebook pixel on a =
+website. Your organization is using the Facebook pixel to track website =
+activity and run ads based on that activity.</p><p> You must install two =
+kinds of code snippets on the website. This includes <b>pixel base =
+code</b> on every page of your website and <b>event code</b> on specific =
+webpages. </p></td></tr></table><hr style=3D"margin-top: 24px; =
+margin-bottom: 24px;" /><table><tr =
+style=3D"color:#4b4f56;font-size:12px;line-height:18px;"><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;">1</div></td=
+><td style=3D"vertical-align: top;"><h1 style=3D"font-size: =
+18px;line-height: 24px;color:#1d2129;">Facebook Pixel ID</h1><p>Your pixel =
+ID is the unique number assigned to your Facebook pixel. You can use this =
+number in your pixel base code.</p><div =
+style=3D"background-color:#f6f7f9;text-align: =
+center;color:#4080ff;font-size: 14px;line-height: 18px;padding: =
+12px;">Pixel ID: <b>339821513993100</b></div></td><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;"></div></td>=
+</tr></table><hr style=3D"margin-top: 24px; margin-bottom: 24px;" =
+/><table><tr style=3D"color:#4b4f56;font-size:12px;line-height:18px;"><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;">2</div></td=
+><td style=3D"vertical-align: top;"><h1 style=3D"font-size: =
+18px;line-height: 24px;color:#1d2129;">Install Pixel Base Code</h1><p>The =
+pixel base code tracks activity on your website, providing a baseline for =
+measuring specific events. Copy the base code below and paste it between =
+the <b>header tags</b> on every page of your website:</p><code =
+style=3D"color:#90949c;border-radius:2px;border:1px solid #dddfe2;display: =
+block;padding: 12px;overflow-x:auto;"><div style=3D"min-height: =
+16px;margin-left:0px;white-space:pre-wrap;word-break:break-word;">&lt;!-- =
+Facebook Pixel Code --&gt;</div><div style=3D"min-height: =
+16px;margin-left:0px;white-space:pre-wrap;word-break:break-word;">&lt;scri=
+pt&gt;</div><div style=3D"min-height: 16px;margin-left:16px;white-space:pr=
+e-wrap;word-break:break-word;">!function(f,b,e,v,n,t,s)</div><div =
+style=3D"min-height: 16px;margin-left:16px;white-space:pre-wrap;word-break=
+:break-word;">&#123;if(f.fbq)return;n=3Df.fbq=3Dfunction()&#123;n.callMeth=
+od?</div><div style=3D"min-height: 16px;margin-left:16px;white-space:pre-w=
+rap;word-break:break-word;">n.callMethod.apply(n,arguments):n.queue.push(a=
+rguments)&#125;;</div><div style=3D"min-height: 16px;margin-left:16px;whit=
+e-space:pre-wrap;word-break:break-word;">if(!f._fbq)f._fbq=3Dn;n.push=3Dn;=
+n.loaded=3D!0;n.version=3D&#039;2.0&#039;;</div><div style=3D"min-height: =
+16px;margin-left:16px;white-space:pre-wrap;word-break:break-word;">n.queue=
+=3D[];t=3Db.createElement(e);t.async=3D!0;</div><div style=3D"min-height: =
+16px;margin-left:16px;white-space:pre-wrap;word-break:break-word;">t.src=
+=3Dv;s=3Db.getElementsByTagName(e)[0];</div><div style=3D"min-height: =
+16px;margin-left:16px;white-space:pre-wrap;word-break:break-word;">s.paren=
+tNode.insertBefore(t,s)&#125;(window,document,&#039;script&#039;,</div><di=
+v style=3D"min-height: 16px;margin-left:16px;white-space:pre-wrap;word-bre=
+ak:break-word;">&#039;https://connect.facebook.net/en_US/fbevents.js&#039;=
+);</div><div style=3D"min-height: 16px;margin-left:16px;white-space:pre-wr=
+ap;word-break:break-word;"></div><div style=3D"min-height: =
+16px;margin-left:16px;white-space:pre-wrap;word-break:break-word;"> =
+fbq(&#039;init&#039;, &#039;339821513993100&#039;); </div><div =
+style=3D"min-height: 16px;margin-left:16px;white-space:pre-wrap;word-break=
+:break-word;">fbq(&#039;track&#039;, &#039;PageView&#039;);</div><div =
+style=3D"min-height: 16px;margin-left:0px;white-space:pre-wrap;word-break:=
+break-word;">&lt;/script&gt;</div><div style=3D"min-height: =
+16px;margin-left:0px;white-space:pre-wrap;word-break:break-word;">&lt;nosc=
+ript&gt;</div><div style=3D"min-height: =
+16px;margin-left:0px;white-space:pre-wrap;word-break:break-word;"> &lt;img =
+height=3D&quot;1&quot; width=3D&quot;1&quot; </div><div =
+style=3D"min-height: 16px;margin-left:0px;white-space:pre-wrap;word-break:=
+break-word;">src=3D&quot;https://www.facebook.com/tr?id=3D339821513993100&=
+amp;ev=3DPageView</div><div style=3D"min-height: 16px;margin-left:0px;whit=
+e-space:pre-wrap;word-break:break-word;">&amp;noscript=3D1&quot;/&gt;</div=
+><div style=3D"min-height: 16px;margin-left:0px;white-space:pre-wrap;word-=
+break:break-word;">&lt;/noscript&gt;</div><div style=3D"min-height: =
+16px;margin-left:0px;white-space:pre-wrap;word-break:break-word;">&lt;!-- =
+End Facebook Pixel Code --&gt;</div></code><p>You can also turn on data =
+matching so that information from your pixel will be used to match website =
+actions with Facebook people. This helps increase the effectiveness of =
+conversion reporting, ad optimization and targeting. <a =
+href=3D"https://developers.facebook.com/docs/facebook-pixel/pixel-with-ads=
+/conversion-tracking#advanced_match">Learn More</a>.</p></td><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;"></div></td>=
+</tr></table><hr style=3D"margin-top: 24px; margin-bottom: 24px;" =
+/><table><tr style=3D"color:#4b4f56;font-size:12px;line-height:18px;"><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;">3</div></td=
+><td style=3D"vertical-align: top;"><h1 style=3D"font-size: =
+18px;line-height: 24px;color:#1d2129;">Install Event Code</h1><p>Event =
+code lets your organization track specific actions that happen and =
+leverage them in advertising. You must install event code on specific =
+pages of your website where the actions will happen.</p><p> You can use =
+the <b>9</b> that Facebook pre-defines to track and optimize ads for =
+conversions. To measure and optimize for more granular actions, you can =
+<b>add parameters</b> to your events by using recommended or advanced =
+installation options for your event tags. You can also create <b>custom =
+events</b> for actions important to your business that you define. There =
+are three implementation settings: basic, recommended, and =
+advanced.</p></td><td style=3D"vertical-align: top;"><div =
+style=3D"font-size:32px;line-height:38px;color:#ced0d4;margin-top:-8px;mar=
+gin-right:8px;width:18px;"></div></td></tr></table><div =
+style=3D"text-align: center;"><div class=3D"button" =
+style=3D"background-color:#4267b2;margin: auto;margin-top:1em;display: =
+inline-block;border-radius:2px;font-size: 14px;line-height:18px;padding: =
+12px 20px;"><a =
+href=3D"https://www.facebook.com/business/help/402791146561655" =
+style=3D"color:#FFFFFF;" target=3D"_blank">Get Event Code for =
+Conversions</a></div></div><hr style=3D"margin-top: 24px; margin-bottom: =
+24px;" /><table><tr =
+style=3D"color:#4b4f56;font-size:12px;line-height:18px;"><td =
+style=3D"vertical-align: top;"><div style=3D"font-size:32px;line-height:38=
+px;color:#ced0d4;margin-top:-8px;margin-right:8px;width:18px;">4</div></td=
+><td style=3D"vertical-align: top;"><h1 style=3D"font-size: =
+18px;line-height: 24px;color:#1d2129;">Check Pixel Status</h1><p>Go to =
+Facebook Ads Manager and select <b>Pixels</b> from the top menu. If the =
+status is <b>Active</b>, your pixel has been installed correctly. It may =
+take up to 20 minutes for your pixel status to change after installing it. =
+</p><p>To troubleshoot or check your setup use the <a =
+href=3D"/events_manager/339821513993100/verify" target=3D"_blank"> Test =
+Events </a> tool in Events Manager. You can also download the <a =
+href=3D"https://www.facebook.com/business/help/198406697184603">Pixel =
+Helper</a> Chrome browser extension for basic troubleshooting.</p><p>If =
+the status is still <b>No Activity Yet</b> after 20 minutes, your pixel =
+code may not be installed correctly. <a href=3D"https://www.intern.faceboo=
+k.com/business/help/218844828315224">View the pixel set up =
+guide</a>.</p></td><td style=3D"vertical-align: top;"><div =
+style=3D"font-size:32px;line-height:38px;color:#ced0d4;margin-top:-8px;mar=
+gin-right:8px;width:18px;"></div></td></tr></table></div></td></table></td=
+></tr></table></center></td></table></td></tr><tr><td =
+style=3D"padding:0;width:100%;"><table border=3D"0" width=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;" =
+id=3D"footer_table"><tr><td style=3D""><center><table border=3D"0" =
+width=3D"610" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><table border=3D"0" =
+width=3D"610" cellspacing=3D"0" cellpadding=3D"0" id=3D"footer" =
+style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:12px;font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;padding:18px 0;border-left:none;bor=
+der-right:none;border-top:none;border-bottom:none;color:#6a7180;font-weigh=
+t:300;line-height:16px;text-align:center;border:none;">This message was =
+sent to <a href=3D"mailto:robyop.eyeco&#064;gmail.com" =
+style=3D"color:#6a7180;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-weight:b=
+old;">robyop.eyeco&#064;gmail.com</a> at your request. Facebook, Inc., =
+Attention: Community Support, 1 Facebook Way, Menlo Park, CA =
+94025</td></tr></table></td></tr></table></center></td></tr></table></td><=
+/tr></table></td></tr></table><span style=3D"width:100%;"><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3DHMTYwMTM5NjIy=
+MDc1NTA1NTpyb2J5b3AuZXllY29AZ21haWwuY29tOjYzMA" =
+style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_a98d562d876d19485e1cf522ce46a76c--
+
